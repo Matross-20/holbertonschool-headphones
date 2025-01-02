@@ -81,15 +81,6 @@ Copy files from the previous task.
 
 Last piece of the page the Footer!
 
-When you are done, here is the result:
-
-### Desktop:
-
-![](/images/Readme/footerD.gif)
-
-### Mobile:
-
-![](/images/Readme/footerM.gif)
 
 ### Author 
 
