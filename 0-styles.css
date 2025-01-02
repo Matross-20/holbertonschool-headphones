@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'Source sans pro';
+    src: url('./fonts/source-sans-pro/SourceSansPro-Regular.otf')
+}
+
+@font-face {
+    font-family: 'Spin Cycle';
+    src: url('./fonts/Spin-Cycle-OT/spincycle_ot.otf');
+}
+
+:root {
+    --font-family: 'Source sans pro', 'Spin Cycle', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Spin Cycle', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    line-height: 3.2rem;
+}
+body {
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    max-width: 100rem;
+    height: 100vh;
+    background: url("./images/headphones_hero_1.jpg") no-repeat center center/cover fixed;";
+    background-size: cover;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+a {
+    text-decoration: none;
+}
+.mobile-nav {
+    display: none;
+}
+.nav a:hover, .nav a:active{
+    color: #FF6565;
+}
+.section-phones input {
+    display: none;
+}
+.mobile-nav {
+    display: none;
+}
+.desktop-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.desktop-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.desktop-nav li {
+    padding: 0 1rem;
+}
+.container-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-logo img {
+    width: 200px;
+}
+.nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+.nav li a {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 3.2rem;
+}
+.section-phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+.container.phones-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 637px;
+    height: 313px;
+    top: 372px;
+    bottom: 115px;
+}
+.phone-title {
+    height: 40px;
+    left: 4.55%;
+    right: 4.71%;
+    top: calc(50% - 40px/2 - 136px);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 350px;
+    color: #FFFFFF;
+}
+.phone-subtitle {
+    height: 20px;
+    left: 22.14%;
+    right: 22.14%;
+    top: calc(50% - 20px/2 - 106px);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.phone-description {
+    height: 104px;
+    left: 0;
+    right: 0;
+    top: calc(50% - 104px/2 + 104px);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 50px;
+    color: #FFFFFF;
+}
+.btn {
+    left: 37.21%;
+    right: 37.36%;
+    top: 31.95%;
+    bottom: 53.99%;
+    margin-top: 40px;
+}
+.phone-btn {
+    display: inline-block;
+    background: #ff6565;
+    border-radius: 2.2rem;
+    border: none;
+    box-shadow: 10px 10px 50px 12px rgb(0 0 0 / 25%);
+    outline: none;
+    padding: 13px 31px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn.phone-btn:hover {
+    background: #ff6565;
+    opacity: 0.8;
+}
+.btn.phone-btn:active {
+    background: #ff6565;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 755px) and (min-width: 520px) {
+    .container {
+        width: 100%;
+    }
+    .container.phones-infos {
+        width: 100%;
+    }
+    .phone-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .phone-subtitle {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .phone-description {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 30px 20px
+    }
+    .phone-btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        height: 900px;
+        left: 0;
+        top: 0;
+        background: url("./images/headphones_hero_1.jpg") no-repeat center center/cover fixed;
+    "; background-size: cover;
+    }
+    .container-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container.phones-infos {
+        width: 100%;
+        padding-top:250px;
+    }
+
+    .phone-title {
+        height: 40px;
+        left: 4.55%;
+        right: 4.71%;
+        top: calc(50% - 40px / 2 - 136px);
+        padding: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .phone-subtitle {
+        height: 40px;
+        left: 10.92%;
+        right: 10.92%;
+        top: calc(50% - 40px / 2 - 113px);
+        margin-top: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .phone-description {
+        height: 182px;
+        left: 3.08%;
+        right: 3.08%;
+        top: calc(50% - 182px / 2 + 127px);
+        padding: 20px 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .icon-handler {
+        display: block;
+        position: absolute;
+        left: 1.5rem;
+        height: 3px;
+        width: 1.5rem;
+        background-color: white;
+        cursor: pointer;
+        transition: transform .1s;
+        top: 75px;;
+    }
+
+    .icon-handler::before {
+        content: '';
+        display: block;
+        border-top: 3px solid white;
+        margin-top: -0.7rem;
+        width: 2.25rem;
+        transition: transform .1s;
+        top: 50px;
+    }
+    .icon-handler::after {
+        content: '';
+        display: block;
+        border-top: 3px solid white;
+        margin-top: 1.1rem;
+        width: 2.25rem;
+        transition: transform .3s;
+        top: 50px;
+    }
+    .mobile-nav{
+        display: none;
+        position: absolute;
+        top: 10vh;
+        right: 4rem;
+        left: 4rem;
+        margin: 2.5rem auto;
+        max-width: 100%;
+        padding: 1rem 2rem;
+        text-align: center;;
+    }
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-nav ul li {
+        margin: 1rem 0;
+    }
+    input#icon-btn:checked ~ .mobile-nav {
+        display: block;
+    }
+    input#icon-btn:checked ~ .phones-infos {
+        padding-top: 450px;
+    }
+    input#icon-btn:checked ~ .icon-handler {
+        width: 2.25rem;
+        transform: rotate(45deg);
+        transition: transform .3s;
+    }
+    input#icon-btn:checked ~ .icon-handler::after {
+        display: none;
+    }
+    input#icon-btn:checked ~ .icon-handler::before {
+        margin-top: 0;
+        transform: rotate(90deg);
+        transition: transform .3s;
+    }
+}
